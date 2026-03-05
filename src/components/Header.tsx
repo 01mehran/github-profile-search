@@ -1,15 +1,14 @@
-// Type;
-import type { IUser } from '../services/FetchUserProfile';
+// Hooks;
+import { useState } from 'react';
+
+//Compomemts;
+import AvatarModal from './AvatarModal';
 
 // Images;
 import githubImg from '../assets/githubimg.png';
 
-import { useState } from 'react';
-import AvatarModal from './AvatarModal';
-
-interface IHeaderProps {
-  userInfo: IUser;
-}
+// Type;
+import type { IHeaderProps } from '../types/components.types';
 
 export default function Header({ userInfo }: IHeaderProps) {
   const [isAvatarModalOpen, setIsAvatarModalOpen] = useState(false);

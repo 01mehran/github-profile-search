@@ -1,7 +1,5 @@
-interface IFotoerProps {
-  showAll: boolean;
-  setShowAll: React.Dispatch<React.SetStateAction<boolean>>;
-}
+// Types;
+import type { IFotoerProps } from '../types/components.types';
 
 export default function Footer({ showAll, setShowAll }: IFotoerProps) {
   return (

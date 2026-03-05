@@ -1,9 +1,8 @@
+// Hooks;
 import { useEffect } from 'react';
-interface IUserProf {
-  onToggleModalAvatar: () => void;
-  isAvatarModalOpen: boolean;
-  avatar: string;
-}
+
+// Types;
+import type { IUserProf } from '../types/components.types';
 
 export default function AvatarModal({
   onToggleModalAvatar,

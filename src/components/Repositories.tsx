@@ -3,16 +3,11 @@ import nesting from '../assets/Nesting.svg';
 import star from '../assets/Star.svg';
 import chield from '../assets/Chield_alt.svg';
 
-// Services;
-import type { IRepos } from '../services/FetchUserProfile';
-
 // Utils;
 import { getUpdatedAtTime } from '../utils/getUpdatedAtTime';
 
 // Types;
-interface TRepoProps {
-  repo: IRepos;
-}
+import type { TRepoProps } from '../types/components.types';
 
 export default function Repositories({ repo }: TRepoProps) {
   const updatedAt = getUpdatedAtTime(repo.updated_at);

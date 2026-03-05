@@ -1,27 +1,11 @@
+// Libraries;
 import axios from 'axios';
+
+// Hooks;
 import { useState } from 'react';
 
-export interface IUser {
-  avatar_url: string;
-  followers: number;
-  following: number;
-  location: string | null;
-  bio?: string;
-  login: string;
-}
-
-export interface IRepos {
-  id: number;
-  name: string;
-  description: string | null;
-  stargazers_count: number;
-  forks_count: number;
-  license: {
-    spdx_id: string | null;
-  } | null;
-  updated_at: string;
-  html_url: string;
-}
+// Types;
+import type { IRepos, IUser } from '../types/components.types';
 
 export default function FetchUserProfile(initialUser?: string) {
   const [userInfo, setUserInfo] = useState<IUser | null>(null);

@@ -1,11 +1,8 @@
 // Icons;
 import searchIcon from '../assets/Search.svg';
 
-interface IHeroSectionProps {
-  onHandleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onHandleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  input: string;
-}
+// Types;
+import type { IHeroSectionProps } from '../types/components.types';
 
 export default function HeroSection({
   onHandleChange,
