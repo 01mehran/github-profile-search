@@ -1,13 +1,13 @@
 // Images;
-import nesting from '../assets/Nesting.svg';
-import star from '../assets/Star.svg';
-import chield from '../assets/Chield_alt.svg';
+import nesting from '@/assets/Nesting.svg';
+import star from '@/assets/Star.svg';
+import chield from '@/assets/Chield_alt.svg';
 
 // Utils;
-import { getUpdatedAtTime } from '../utils/getUpdatedAtTime';
+import { getUpdatedAtTime } from '@/utils/getUpdatedAtTime';
 
 // Types;
-import type { TRepoProps } from '../types/components.types';
+import type { TRepoProps } from '@/types/components.types';
 
 export default function Repositories({ repo }: TRepoProps) {
   const updatedAt = getUpdatedAtTime(repo.updated_at);

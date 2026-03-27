@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 
 // Types;
-import type { IUserProf } from '../types/components.types';
+import type { IUserProf } from '@/types/components.types';
 
 export default function AvatarModal({
   onToggleModalAvatar,

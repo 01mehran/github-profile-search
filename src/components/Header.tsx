@@ -5,10 +5,10 @@ import { useState } from 'react';
 import AvatarModal from './AvatarModal';
 
 // Images;
-import githubImg from '../assets/githubimg.png';
+import githubImg from '@/assets/githubimg.png';
 
 // Type;
-import type { IHeaderProps } from '../types/components.types';
+import type { IHeaderProps } from '@/types/components.types';
 
 export default function Header({ userInfo }: IHeaderProps) {
   const [isAvatarModalOpen, setIsAvatarModalOpen] = useState(false);

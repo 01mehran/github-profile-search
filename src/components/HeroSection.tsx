@@ -1,8 +1,8 @@
 // Icons;
-import searchIcon from '../assets/Search.svg';
+import searchIcon from '@/assets/Search.svg';
 
 // Types;
-import type { IHeroSectionProps } from '../types/components.types';
+import type { IHeroSectionProps } from '@/types/components.types';
 
 export default function HeroSection({
   onHandleChange,

@@ -1,5 +1,5 @@
 // Types;
-import type { IFotoerProps } from '../types/components.types';
+import type { IFotoerProps } from '@/types/components.types';
 
 export default function Footer({ showAll, setShowAll }: IFotoerProps) {
   return (

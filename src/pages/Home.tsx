@@ -5,12 +5,12 @@ import { useEffect, useState } from 'react';
 import FetchUserProfile from '../services/FetchUserProfile';
 
 // Components;
-import Repositories from '../components/Repositories';
-import HeroSection from '../components/HeroSection';
-import Spinner from '../components/Spinner';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import BackToTopButtun from '../components/BackToTopButtun';
+import Repositories from '@compos/Repositories';
+import HeroSection from '@compos/HeroSection';
+import Spinner from '@compos/Spinner';
+import Footer from '@compos/Footer';
+import Header from '@compos/Header';
+import BackToTopButtun from '@compos/BackToTopButtun';
 
 export default function Home() {
   const [input, setInput] = useState<string>('');

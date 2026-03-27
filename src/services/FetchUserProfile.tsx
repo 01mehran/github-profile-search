@@ -5,7 +5,7 @@ import axios from 'axios';
 import { useState } from 'react';
 
 // Types;
-import type { IRepos, IUser } from '../types/components.types';
+import type { IRepos, IUser } from '@/types/components.types';
 
 export default function FetchUserProfile(initialUser?: string) {
   const [userInfo, setUserInfo] = useState<IUser | null>(null);
